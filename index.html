@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainstorm - Présentation</title>
+    <style>
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .timeline-item {
+        margin-bottom: 20px;
+        background-color: grey;
+        padding: 10px;
+        border-radius: 8px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .timeline-link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .timeline-date {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .timeline-item p {
+        margin: 10px 0;
+    }
+
+    .gallery {
+        margin-top: 20px;
+    }
+        body {
+            font-family: Arial, sans-serif;
+            margin-left: 40px;
+            margin-right: 40px;
+            padding: 0;
+            background-color: black;
+            color: white
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: black;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: grey;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1>Brainstorm</h1> 
+       
+    </header>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#brainstorm">Présentation de Brainstorm</a>
+        <a href="#quisuisje">Fondateur</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="accueil" class="section">
+        <h2>Accueil</h2>
+        <p>Bienvenue sur la page de présentation de Brainstorm,
+            une application en développement qui a pour but d'améliorer
+            la détection ainsi que la localisation des tumeurs chez les patients grâce au Machine 
+            Learning et à un modèle convolutionnel évolué. 
+            
+            Cette application vise à améliorer le diagnostic ainsi que le suivi des patients par les praticiens
+            du secteur de la santé 
+        </p>
+        <div class="gallery">
+            <figure>
+                <img src="image/brainstorm.jpg" alt="Développement en cours">
+                
+            </figure>
+        </div>
+
+    </section>
+    
+    <section id="brainstorm" class="section">
+        <h2>Présentation de Brainstorm</h2>
+        <p>Découvrez l'évolution du projet Brainstorm en cliquant sur les liens</p>
+        <div class="timeline">
+            <!-- Première date -->
+            <div class="timeline-item">
+                <a href="#date1" class="timeline-link">
+                    <span class="timeline-date">10 Février 2025</span>
+                    <p>Implémentation de la localisation des tumeurs avec la méthode "activation mapping"</p>
+                </a>
+            </div>
+    
+            <!-- Deuxième date -->
+            <div class="timeline-item">
+                <a href="#date2" class="timeline-link">
+                    <span class="timeline-date">12 Décembre 2024</span>
+                    <p>Création de la version bêta de l'application Brainstorm</p>
+                </a>
+            </div>
+            <!-- Troisième date -->
+            <div class="timeline-item">
+                <a href="#date3" class="timeline-link">
+                    <span class="timeline-date">7 Décembre 2024</span>
+                    <p>Elaboration d'un modèle capable de détecter la présence d'une tumeur et perfectionnement du modèle</p>
+                </a>
+            </div>
+            <!-- Quatrième date -->
+            <div class="timeline-item">
+                <a href="#date4" class="timeline-link">
+                    <span class="timeline-date">2 Novembre 2024</span>
+                    <p>Elaboration d'un modèle capable de détecter une tumeur et de classifier par type de tumeurs</p>
+                </a>
+            </div>
+    
+            <!-- Ajoutez d'autres éléments ici -->
+        </div>
+
+        <div id="date1">
+            <h3>10 Février 2025 : Activation Mapping</h3>  
+
+
+            <p>>>> Implémentation de la méthode "activation mapping" 
+               pour cibler et localiser les zones qui contribuent le plus à la prise
+               de décision du modèle. Voici ci-dessous un exemple du fonctionnement 
+               sur deux images médicales de cette méthode de détection
+
+            </p>
+
+            <div class="gallery">
+                <figure>
+                   <img src="image/1.png" alt="Développement en cours">
+                   <figcaption>Résultats de la localisation de la tumeur cérébrale (gliome) sur deux exemples (données de tests)</figcaption>
+                </figure>
+            </div>
+            <p> L'intérêt d'utiliser cette méthode réside dans la capacité à obtenir 
+               la localisation de la tumeur avec une grande précision via l'application
+               d'un seuillage et d'un filtrage. Néanmoins, comme on peut le constater, 
+               le filtrage n'est pas encore optimal (notamment au niveau du crâne). 
+               Cela fera l'objet de la prochaine amélioration.
+            </p>
+      
+            <div class="gallery" style="display: flex; justify-content: space-around;">
+                <figure>                
+                   <img src="image/tumeur.png" alt="Développement en cours">
+                   <img src="image/tumeur1.png" alt="Développement en cours">
+                   <figcaption>Prédiction de cancer chez le patient avec localisation de la tumeur sur l'application Brainstorm</figcaption>
+
+                </figure>
+            </div>
+
+        </div>
+        <div id="date2">
+            <h3>12 Décembre 2024 : Création de la version bêta de l'application Brainstorm</h3>  
+
+
+            <p>>>> Création d'une première version de l'interface utilisateur avec le modèle
+                CNN développé précédemment. Cette intégration du modèle est modulaire, permettant 
+                ainsi de continuer son amélioration en parallèle du développement de l'application
+                et des fonctionalités comme la localisation de la tumeur (cette fonctionnalité sera intégrée prochainement).
+
+            </p>
+
+            <div class="gallery">
+                <video width="600" controls>
+                    <source src="image/brainstorm.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+                
+            </div>
+            <p> Dans cette première version de l'application, l'objectif est
+                d'offrir une interface simple d'utilisation, avec un lien pour 
+                charger l'image depuis un répertoire local. Le modèle CNN implémenté
+                dans l'application se charge ainsi à donner une évaluation de la prédiction, 
+                et confirme si le patient possède une tumeur ou non.
+
+            </p>
+
+        </div>
+        <div id="date3">
+            <h3>7 Novembre 2024 : Elaboration d'un modèle capable de détecter la présence d'une tumeur et perfectionnement du modèle</h3>  
+
+
+            <p>>>> L'application repose sur un modèle CNN conçu pour détecter et avertir le 
+                praticien de l'éventuelle présence d'une tumeur chez un patient. Le modèle est entraîné avec 
+                plus de 1780 images, et validé avec 1190 images médicales sur 20 epochs. Les performances sont
+                globalement satisfaisantes, avec une accuracy de 99% et une loss de 0.03 ~ 0.04 sur les données de validation, 
+                sans overfitting!
+
+            </p>
+
+            <div class="gallery" style="display: flex; justify-content: space-around;">
+                <figure>                
+                   <img src="image/resultats.png" alt="Développement en cours">
+                   <figcaption>Résultats du modèle CNN développé</figcaption>
+
+                </figure>
+            </div>
+            <p> 
+
+            </p>
+            <div class="gallery" style="display: flex; justify-content: space-around;">
+                <figure>                
+                   <img src="image/courbe_precision.png" alt="Développement en cours">
+                   <img src="image/courbe_loss.png" alt="Développement en cours">
+                   <figcaption>Courbes de l'Accuracy et de la Loss</figcaption>
+
+                </figure>
+            </div>
+
+        </div>
+        <div id="date4">
+            <h3>2 Novembre 2024 : Elaboration d'un modèle capable de détecter une tumeur et de classifier par type de tumeurs</h3>  
+
+
+            <p>>>> L'application repose sur un modèle CNN spécialement conçu pour détecter des tumeurs et classer une image médicale
+                d'un patient selon le type de tumeurs (méningiome, gliome, etc...). Le praticien peut donc déterminer avec une plus grande précision de l'éventuelle présence d'une tumeur chez un patient.
+                Le modèle est entraîné avec plus de 1780 images, et validé avec 1190 images médicales sur 30 epochs. Les performances sont
+                globalement satisfaisantes, avec une accuracy de 91% et une loss de ~ 0.27 sur les données de validation, sans overfitting.
+
+            </p>
+            <div class="gallery">
+                <figure>
+                   <img src="image/results.png" alt="Développement en cours">
+                   <figcaption>Résultats du modèle CNN développé</figcaption>
+                </figure>
+            </div>
+      
+            <div class="gallery" style="display: flex; justify-content: space-around;">
+                <figure>                
+                   <img src="image/accuracy.png" alt="Développement en cours">
+                   <img src="image/loss.png" alt="Développement en cours">
+                   <figcaption>Courbes de l'Accuracy et de la Loss</figcaption>
+
+                </figure>
+            </div>
+
+
+            <p> L'intérêt de ce modèle réside dans l'utilisation de la fonction "prédiction" pour évaluer si une image médicale 
+                   comporte une tumeur de type gliome, méningiome, etc ou si le patient n'a aucune tumeur. Voici ci-dessous
+                   deux exemples de prédiction basés sur le modèle
+
+            </p>
+
+            <div class="gallery" style="display: flex; justify-content: space-around;">
+                <figure>                
+                   <img src="image/meningiome.png" alt="Développement en cours">
+                   <img src="image/gliome.png" alt="Développement en cours">
+                   <figcaption>Prédiction du type de cancer pour deux images tests</figcaption>
+
+                </figure>
+            </div>
+
+        </div>
+
+        
+    </section>
+    
+    <section id="quisuisje" class="section">
+        <h2>Fondateur</h2>
+        <p>Je m'appelle Grégory BERTRAND, développeur de l'application Brainstorm,
+           étudiant ingénieur en 3ème année aux Mines de Saint-Etienne et stagiaire - Ingénieur 
+           Système en imagerie médicale chez Thales. Passionné 
+           par les nouvelles technologies depuis mon adolescence, je m'intéresse depuis
+           maintenant plus de trois ans à l'application du Machine Learning dans la vie
+           quotidienne, et en particulier dans le domaine de la santé et du diagnostic
+           dont l'imagerie médicale.  
+        </p>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Si le projet vous intéresse, ou que vous avez simplement des questions concernant l'application,
+           vous pouvez me contacter à l'adresse mail suivante : <a href="mailto:contact@example.com">gregory.bertrand@etu.emse.fr</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Brainstorm. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
