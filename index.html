@@ -139,6 +139,12 @@
             align-items: center;
         }
 
+        #date5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         @media (min-width: 1200px) {
             .section {
                 margin-left: 10rem;
@@ -201,29 +207,36 @@
             <!-- Première date -->
             <div class="timeline-item">
                 <a href="#date1" class="timeline-link">
+                    <span class="timeline-date">19 Février 2025</span>
+                    <p>Implémentation du seuillage auto pour la détéction des tumeurs + amélioration du modèle de classification"</p>
+                </a>
+            </div>
+            <!-- Deuxième date -->
+            <div class="timeline-item">
+                <a href="#date2" class="timeline-link">
                     <span class="timeline-date">10 Février 2025</span>
                     <p>Implémentation de la localisation des tumeurs avec la méthode "activation mapping"</p>
                 </a>
             </div>
 
-            <!-- Deuxième date -->
-            <div class="timeline-item">
-                <a href="#date2" class="timeline-link">
-                    <span class="timeline-date">12 Décembre 2024</span>
-                    <p>Création de la version bêta de l'application Brainstorm</p>
-                </a>
-            </div>
             <!-- Troisième date -->
             <div class="timeline-item">
                 <a href="#date3" class="timeline-link">
-                    <span class="timeline-date">7 Décembre 2024</span>
-                    <p>Elaboration d'un modèle capable de détecter la présence d'une tumeur et perfectionnement du
-                        modèle</p>
+                    <span class="timeline-date">12 Décembre 2024</span>
+                    <p>Création de la version bêta de l'application Brainstorm</p>
                 </a>
             </div>
             <!-- Quatrième date -->
             <div class="timeline-item">
                 <a href="#date4" class="timeline-link">
+                    <span class="timeline-date">7 Décembre 2024</span>
+                    <p>Elaboration d'un modèle capable de détecter la présence d'une tumeur et perfectionnement du
+                        modèle</p>
+                </a>
+            </div>
+            <!-- Cinquième date -->
+            <div class="timeline-item">
+                <a href="#date5" class="timeline-link">
                     <span class="timeline-date">2 Novembre 2024</span>
                     <p>Elaboration d'un modèle capable de détecter une tumeur et de classifier par type de tumeurs</p>
                 </a>
@@ -231,8 +244,34 @@
 
             <!-- Ajoutez d'autres éléments ici -->
         </div>
-
         <div id="date1">
+            <h3>19 Février 2025 : Implémentation du seuillage auto et manuel pour la détéction des tumeurs + amélioration du modèle de classification</h3>
+
+
+            <p>>>> Le seuillage automatique est une nouvelle fonctionnalité offerte par l'application. Elle permet de cibler directement la zone d'activation
+             qui participe à la prise de décision du modèle. L'application intègre désormais la classification des tumeurs avec un modèle CNN qui possède plus de filtres 
+             et donc plus de paramètres. Les performances sont globalement satifaisantes et en améliorations avec une Accuracy de 97% et une Loss de 0.19
+
+            </p>
+
+            <div class="gallery">
+                <figure>
+                    <img src="image/seuil_gliome.png" alt="Développement en cours">
+                    <img src="image/seuil_meningiome.png" alt="Développement en cours">
+                    <img src="image/seuil_sanstumeur.png" alt="Développement en cours">
+                    <figcaption>Résultats de la localisation d'une tumeur cérébrale de type gliome, méningiome, et enfin sans tumeur</figcaption>
+                </figure>
+            </div>
+
+ 
+
+            <p> 
+            </p>
+
+
+
+        </div>
+        <div id="date2">
             <h3>10 Février 2025 : Activation Mapping</h3>
 
 
@@ -276,7 +315,7 @@
             </div>
 
         </div>
-        <div id="date2">
+        <div id="date3">
             <h3>12 Décembre 2024 : Création de la version bêta de l'application Brainstorm</h3>
 
 
@@ -304,7 +343,7 @@
             </p>
 
         </div>
-        <div id="date3">
+        <div id="date4">
             <h3>7 Novembre 2024 : Elaboration d'un modèle capable de détecter la présence d'une tumeur et
                 perfectionnement du modèle</h3>
 
@@ -338,7 +377,7 @@
             </div>
 
         </div>
-        <div id="date4">
+        <div id="date5">
             <h3>2 Novembre 2024 : Elaboration d'un modèle capable de détecter une tumeur et de classifier par type de
                 tumeurs</h3>
 
