@@ -190,10 +190,32 @@
             }
 
         }
+        #backToTop {
+           position: fixed;
+           bottom: 20px;
+           right: 20px;
+           padding: 10px 15px;
+           font-size: 16px;
+           background-color: #007BFF;
+           color: white;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           display: none; /* Caché au départ */
+           transition: opacity 0.3s ease-in-out;
+       }
+
+       #backToTop:hover {
+           background-color: #0056b3;
+       }
+
     </style>
 </head>
 
 <body>
+
+    <button id="backToTop" onclick="scrollToTop()"> </button>
+
     <header>
 
         <div class="marquee-container">
@@ -484,6 +506,21 @@
     <footer>
         <p>&copy; 2025 Brainstorm. Tous droits réservés.</p>
     </footer>
+
+    window.onscroll = function() {
+       let button = document.getElementById("backToTop");
+       if (document.documentElement.scrollTop > 300) { 
+           button.style.display = "block"; // Affiche le bouton si on scrolle vers le bas
+       } else {
+           button.style.display = "none"; // Cache le bouton si on est en haut
+       }
+   };
+
+   function scrollToTop() {
+       window.scrollTo({ top: 0, behavior: "smooth" }); // Retour en haut avec un effet fluide 
+   }
+
+  
 </body>
 
 </html>
