@@ -209,13 +209,37 @@
        #backToTop:hover {
            background-color: #0056b3;
        }
+       #linkedinBtn {
+          width: 50px;
+         height: 50px;
+         border: none;
+         background-color: #0077b5;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         cursor: pointer;
+       }
+
+       #linkedinBtn img {
+         width: 24px;
+         height: 24px;
+       }
+
+      #linkedinBtn:hover {
+         background-color: #005a8c;
+      }
 
     </style>
 </head>
 
 <body>
 
-    <button id="backToTop" onclick="scrollToTop()">⬆️</button>
+    <button id="backToTop" onclick="scrollToTop()">⬆️
+    </button>
+    <button id="linkedinBtn" onclick="openLinkedIn()">
+       <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </button>
 
     <header>
 
@@ -521,7 +545,12 @@
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    </script>
+</script>
+<script>
+    function openLinkedIn() {
+        window.open("https://www.linkedin.com/in/votre-profil", "_blank");
+    }
+</script>
    
   
 </body>
