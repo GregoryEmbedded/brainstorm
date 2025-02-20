@@ -211,8 +211,8 @@
        }
        #linkedinBtn {
           position: fixed;
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           border: none;
           background-color: white;
           border-radius: 50%;
@@ -236,6 +236,33 @@
        #linkedinBtn:focus {
           outline: none; /* Supprime l'effet de focus pour ne pas gêner l'apparence */ 
        }
+       #GitHubBtn {
+          position: fixed;
+          width: 40px;
+          height: 40px;
+          border: none;
+          background-color: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: opacity 0.3s ease-in-out;
+          z-index: 1000; /* S'assurer que le bouton est au-dessus des autres éléments */
+       }
+
+       #GitHubBtn img {
+          width: 28px;
+          height: 28px;
+       }
+
+       #GitHubBtn:hover {
+          background-color: #005a8c;
+       }
+
+       #GitHubBtn:focus {
+          outline: none; /* Supprime l'effet de focus pour ne pas gêner l'apparence */ 
+       }
 
 </style>
 </head>
@@ -246,6 +273,9 @@
     </button>
     <button id="linkedinBtn" onclick="openLinkedIn()">
        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </button>
+    <button id="GitHubBtn" onclick="GitHub()">
+       <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
     </button>
 
     <header>
@@ -556,6 +586,11 @@
 <script>
     function openLinkedIn() {
         window.open("https://www.linkedin.com/in/bertrand-gr%C3%A9gory/", "_blank");
+    }
+</script>
+<script>
+    function GitHub() {
+        window.open("https://github.com/GregoryEmbedded/brainstorm", "_blank");
     }
 </script>
    
