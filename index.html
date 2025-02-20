@@ -145,6 +145,24 @@
             flex-direction: column;
             align-items: center;
         }
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+            animation: marquee 1s linear 1 forwards;
+        }
+        @keyframes marquee {
+            from { transform: translateY(-200%); }
+            to { transform: translateY(000%); }
+        }
 
         @media (min-width: 1200px) {
             .section {
@@ -172,8 +190,10 @@
 <body>
     <header>
 
-        <h1>Brainstorm</h1>
-
+        <div class="marquee-container">
+            <h1 class="marquee-text">Brainstorm - L'IA au service de la santé 🚀</h1>
+        </div>
+        
     </header>
     <nav>
         <a href="#accueil">Accueil</a>
