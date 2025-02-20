@@ -507,20 +507,23 @@
         <p>&copy; 2025 Brainstorm. Tous droits réservés.</p>
     </footer>
     
+    <script>
     window.onscroll = function() {
-       let button = document.getElementById("backToTop");
-       if (document.documentElement.scrollTop > 300) { 
-           button.style.display = "block"; // Affiche le bouton si on scrolle vers le bas
-       } else {
-           button.style.display = "none"; // Cache le bouton si on est en haut
-       }
+        var button = document.getElementById("backToTop");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
     };
 
     function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" }); // Retour en haut avec un effet fluide 
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+    </script>
 
-    <script src="script.js"></script>
+
+    
 </body>
 
 </html>
