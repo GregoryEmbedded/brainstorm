@@ -6,17 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brainstorm - Présentation</title>
     <style>
-
-        .visit-counter {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 18px;
-        }
  
         .timeline {
             display: flex;
@@ -534,26 +523,8 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     </script>
-    <script>
-        // Fonction pour récupérer le nombre de visites via AJAX
-    function getVisitCounter() {
-       var xhr = new XMLHttpRequest();
-       xhr.open('GET', 'counter.php', true); // Appel du fichier PHP
-       xhr.onreadystatechange = function() {
-          if (xhr.readyState == 4 && xhr.status == 200) {
-                    // Mettre à jour l'élément avec le nombre de visites
-              document.getElementById('counter').innerText = 'Nombre de visites : ' + xhr.responseText;
-          }
-       };
-       xhr.send();
-     }
-
-        // Appeler la fonction pour charger le compteur au chargement de la page
-     window.onload = getVisitCounter;
-    </script>
-
-
-    
+   
+  
 </body>
 
 </html>
