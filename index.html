@@ -270,6 +270,21 @@
        #GitHubBtn:focus {
           outline: none; /* Supprime l'effet de focus pour ne pas gêner l'apparence */ 
        }
+       .counter-container {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
 
 </style>
 </head>
@@ -575,6 +590,10 @@
 
     <footer>
         <p>&copy; 2025 Brainstorm. Tous droits réservés.</p>
+        <div class="counter-container">
+        <h1>Nombre de visiteurs</h1>
+        <p id="visitor-count">0</p>
+    </div>
     </footer>
     
     <script>
@@ -601,6 +620,19 @@
         window.open("https://github.com/GregoryEmbedded/brainstorm", "_blank");
     }
 </script>
+<script>
+        // Vérifier si le compteur existe dans le localStorage
+        if (!localStorage.getItem("visitorCount")) {
+            localStorage.setItem("visitorCount", 0);
+        }
+
+        // Récupérer et incrémenter le compteur
+        let count = parseInt(localStorage.getItem("visitorCount")) + 1;
+        localStorage.setItem("visitorCount", count);
+
+        // Afficher la valeur dans la page
+        document.getElementById("visitor-count").innerText = count;
+    </script>
    
   
 </body>
