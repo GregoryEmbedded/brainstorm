@@ -605,10 +605,31 @@
                 </figure>
             </div>
 
- 
-
-            <p> 
+            <p> Une étape cruciale du projet consistait à effectuer un "labeling" de qualité pour nos dataset d'entrer. L'objectif consiste, 
+                dans un premier temps, à réduire les différents bruits électroniques liés au microscope (ils se remarquent avec l'apparition de 
+                points lumineux, assimilables à des neurones). Un préttraitement est donc nécessaire pour obtenir des labels de qualité pour l'entraînement
+                du modèle (on cherche à fabriquer des masques pour les labels. Pour cela, des filtres spécifiques ont été utilisés, dont un filtre gaussian
+                pour appliquer un flou et réduire la taille ainsi que l'intensité des (petits) points lumineux. Une autre technique consistait à appliquer
+                un filtre bilatéral pour également appliquer un flou sur des grandes aires, tout en améliorant les contours délimitant deux espaces (dans notre 
+                cas, les neurones et le fond de l'image). Enfin, une dernière étape consiste à appliquer un seuil pour "binariser" le masque en deux labels distincts:
+                "0" pour le fond de l'image et "1" pour les neurones). On obtient au final ce type de label-masque!
+                 
             </p>
+            <div class="gallery">
+                <figure>
+                    
+                    <img src="image/example1.png" alt="Développement en cours">
+                    <figcaption> Exemple d'image d'un dataset d'entraînement  </figcaption>
+                     
+                </figure>         
+            
+                <figure>
+                    
+                    <img src="image/example2.png" alt="Développement en cours">
+                    <figcaption> Masque associé à l'image précédente </figcaption>
+                     
+                </figure>
+            </div>
 
 
 
@@ -617,7 +638,7 @@
 
     <section id="quisuisje" class="section">
         <h2>Fondateur</h2>
-        <p>Je m'appelle Grégory BERTRAND, développeur de l'application Brainstorm,
+        <p>Je m'appelle Grégory BERTRAND, développeur de l'application Brainstorm et du projet NeuronDetect,
             étudiant ingénieur en 3ème année aux Mines de Saint-Etienne et stagiaire - Ingénieur
             Système en imagerie médicale chez Thales. Passionné
             par les nouvelles technologies depuis mon adolescence, je m'intéresse depuis
