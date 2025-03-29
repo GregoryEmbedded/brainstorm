@@ -605,10 +605,10 @@
                 </figure>
             </div>
 
-            <p> Une étape cruciale du projet consistait à effectuer un "labeling" de qualité pour nos dataset d'entrer. L'objectif consiste, 
+            <p> Une étape cruciale du projet consistait à effectuer un "labeling" de qualité pour nos datasets d'entrée. L'objectif consiste, 
                 dans un premier temps, à réduire les différents bruits électroniques liés au microscope (ils se remarquent avec l'apparition de 
-                points lumineux, assimilables à des neurones). Un préttraitement est donc nécessaire pour obtenir des labels de qualité pour l'entraînement
-                du modèle (on cherche à fabriquer des masques pour les labels. Pour cela, des filtres spécifiques ont été utilisés, dont un filtre gaussian
+                points lumineux, assimilables à des neurones). Un prétraitement est donc nécessaire pour obtenir des labels de qualité pour l'entraînement
+                du modèle (on cherche à fabriquer des masques pour les labels). Pour cela, des filtres spécifiques ont été utilisés, dont un filtre gaussian
                 pour appliquer un flou et réduire la taille ainsi que l'intensité des (petits) points lumineux. Une autre technique consistait à appliquer
                 un filtre bilatéral pour également appliquer un flou sur des grandes aires, tout en améliorant les contours délimitant deux espaces (dans notre 
                 cas, les neurones et le fond de l'image). Enfin, une dernière étape consiste à appliquer un seuil pour "binariser" le masque en deux labels distincts:
