@@ -157,6 +157,11 @@
             flex-direction: column;
             align-items: center;
         }
+        #date6 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .marquee-container {
             width: 100%;
             overflow: hidden;
@@ -567,17 +572,46 @@
 
     </section>
 
-    <section id="brainstorm" class="section">
+    <section id="NeuronDetect" class="section">
         <h2>Présentation de NeuronDetect</h2>
         <p>Découvrez l'évolution du projet NeuronDetect en cliquant sur les liens</p>
         <div class="timeline">
             <!-- Première date -->
             <div class="timeline-item">
-                <a href="#date1" class="timeline-link">
+                <a href="#date6" class="timeline-link">
                     <span class="timeline-date">20 Mars 2025</span>
                     <p> Réalisation d'un U-Net permettant la détection automatique de l'activité calcique des neurones</p>
                 </a>
             </div>
+        </div>
+        <div id="date6">
+            <h3>20 Mars 2025 : Réalisation d'un U-Net permettant la détection automatique de l'activité calcique des neurones</h3>
+
+
+            <p>>>> Dans ce projet, nous cherchons à détecter à l'aide d'un modèle convolutionnel de type U-Net les activité calciques
+                de neurones situés dans la moelle épinière afin d'automatiser cette détection. Ce modèle U-Net est plus évolué que le CNN 
+                utilisé pour le projet Brainstorm, puisqu'il comporte trois parties: un encodeur, un bottleneck ainsi qu'un décodeur. 
+                L'ojectif de ce projet est donc de récupérer les prédictions du modèle et d'y effectuer un post-traitement pour repérer ces neurones
+                en les entourant.
+
+            </p>
+
+            <div class="gallery">
+                <figure>
+                    
+                    <img src="image/NeuronDetect.png" alt="Développement en cours">
+                    <figcaption> Résultats Post-traitement de la détection de l'activité calcique des neurones </figcaption>
+                     
+                </figure>
+            </div>
+
+ 
+
+            <p> 
+            </p>
+
+
+
         </div>
      </section>
 
