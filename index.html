@@ -183,11 +183,18 @@
             flex-direction: column;
             align-items: center;
         }
+        #date10 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
         #date100 {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+        
         .marquee-container {
             width: 100%;
             overflow: hidden;
@@ -350,7 +357,7 @@
         <p>
             >>> Brainstorm AI est une application médicale visant à améliorer la détection, la localisation des tumeurs sur les images médicales des patients grâce au Deep-learning
             , à un modèle convolutionnel évolué (CNN) pour la classification/localisation des tumeurs et à un modèle U-Net pour effectuer la segmentation des images (segmentation pixel 
-            par pixel avec détermination -> pas de tumeur/tumeur) qui fait preuve d'une grande précision. Cette application est exploitable par des professionnels de santé (application de bureau) 
+            par pixel avec labellisation -> pas de tumeur/tumeur) qui fait preuve d'une grande précision. Cette application est exploitable par des professionnels de santé (application de bureau) 
             et vise à améliorer le diagnostic ainsi que le suivi des patients en réduisant les erreurs de diagnostic. L'objectif est d'offrir une solution simple et facilement déployable sur la
             majorité des systèmes d'exploitation (Windows, MacOs). Une première version de cette application s'occupe de classer par type de tumeurs, localiser les tumeurs cérébrales, puis segmenter 
             l'image pour une grande précision. De nouvelles versions seront bientôt étudiées.
@@ -367,7 +374,13 @@
         <h2>Présentation de Brainstorm</h2>
         <p>Découvrez l'évolution du projet Brainstorm en défilant et cliquant les liens ci-dessous</p>
         <div class="timeline">
-
+           <!-- Dixième date -->
+            <div class="timeline-item">
+                <a href="#date10" class="timeline-link">
+                    <span class="timeline-date">16 Mai 2025</span>
+                    <p> Segmentation de l'image médicale avec le modèle U-Net du Projet de recherche (cf Mines de Saint-Etienne)</p>
+                </a>
+            </div>
            <!-- Neuvième date -->
             <div class="timeline-item">
                 <a href="#date9" class="timeline-link">
@@ -438,7 +451,33 @@
          </div>
 
             <!-- Ajoutez d'autres éléments ici -->
+         <div id="date10">
+                 <h3>16 Mai 2025 : Segmentation de l'image médicale avec le modèle U-Net du Projet de recherche (cf Mines de Saint-Etienne)</h3>
 
+
+                  <p>>>> L'objectif de cette segmentation de l'image patient est d'offrir une distinction claire entre la tumeur et le reste des tissus
+                      grâce au modèle U-Net développé lors du projet de recherche effectué aux Mines de Saint-Etienne (à savoir l'étude de l'activité calcique
+                      des neuronnes). Ce modèle U-Net est donc strictement identique, avec 4 couches dans l'encodeur/décodeur (sans compteur le Bottleneck), et basé sur 1 million
+                      de paramètre. L'idée est donc d'offrir une segmentation plus précise si nécessaire par le praticien (la méthode d'Activation mapping, bien que précise et fiable, ne permet
+                      pas de faire une segmentation pixel par pixel). Les performances sont très satisfaisantes avec une accuracy approximativement de 95% et une loss de 0,13. 
+                    
+                  </p>
+
+                  <div class="gallery">
+                      <figure>
+                          <img src="image/breast_tumos.png" alt="Développement en cours">
+                          <figcaption> Segmentation de l'image avec la distinction Tumeur(s)/Sans Tumeurs </figcaption>
+                      </figure>
+                  </div>
+
+             
+                  <div class="gallery">
+                      <figure>
+                          <img src="image/breast_tumos.png" alt="Développement en cours">
+                          <figcaption> Performances globales du modèle U-Net</figcaption>
+                      </figure>
+                  </div>
+         </div>
 
 
          <div id="date9">
