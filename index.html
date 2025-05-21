@@ -310,6 +310,35 @@
        #GitHubBtn:focus {
           outline: none; /* Supprime l'effet de focus pour ne pas gêner l'apparence */ 
        }
+       #InstaBtn {
+          position: fixed;
+          width: 40px;
+          height: 40px;
+          border: none;
+          background-color: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: opacity 0.3s ease-in-out;
+          z-index: 1000; 
+          top: 70%; /* Décale le bouton vers le bas de 90% de la hauteur de la fenêtre */
+          left: 2%;
+       }
+
+       #InstaBtn img {
+          width: 28px;
+          height: 28px;
+       }
+
+       #InstaBtn:hover {
+          background-color: black;
+       }
+
+       #InstaBtn:focus {
+          outline: none; /* Supprime l'effet de focus pour ne pas gêner l'apparence */ 
+       }
 
 
 
@@ -325,6 +354,9 @@
     </button>
     <button id="GitHubBtn" onclick="GitHub()">
        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+    </button>
+        <button id="InstaBtn" onclick="GitHub()">
+       <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Insta">
     </button>
 
     <header>
@@ -878,6 +910,11 @@
 </script>
 <script>
     function GitHub() {
+        window.open("https://github.com/GregoryEmbedded/brainstorm", "_blank");
+    }
+</script>
+<script>
+    function Insta() {
         window.open("https://github.com/GregoryEmbedded/brainstorm", "_blank");
     }
 </script>
