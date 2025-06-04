@@ -188,6 +188,11 @@
             flex-direction: column;
             align-items: center;
         }
+        #date11 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         
         #date100 {
             display: flex;
@@ -408,6 +413,14 @@
         <h2>Présentation de Brainstorm</h2>
         <p>Découvrez l'évolution du projet Brainstorm en défilant et cliquant les liens ci-dessous</p>
         <div class="timeline">
+           <!-- Onzième date -->
+            <div class="timeline-item">
+                <a href="#date11" class="timeline-link">
+                    <span class="timeline-date">31 Mai 2025</span>
+                    <p> Accès sécurisé à l'application Brainstorm AI
+                    </p>
+                </a>
+            </div>
            <!-- Dixième date -->
             <div class="timeline-item">
                 <a href="#date10" class="timeline-link">
@@ -487,6 +500,40 @@
          </div>
 
             <!-- Ajoutez d'autres éléments ici -->
+
+         <div id="date11">
+                 <h3>31 Mai 2025 : Accès sécurisé à l'application Brainstorm AI</h3>
+
+
+                  <p>>>> Comme dans toute application de bureau sensible et avec une portée commerciale, il est essentiel de sécuriser l'accès à cette dernière,
+                         en instaurant un système de double authentification (une première authentification via le compte de la base de donnée Supabase, puis une
+                         deuxième authetification avec la clé d'accès client. Voici ci dessous un résumé du processus de connexion sur la page avec sa description schématique.
+                    
+                  </p>
+
+                  <div class="gallery">
+                      <figure>
+                          <img src="image/.png" alt="Développement en cours">
+                          <figcaption> Segmentation de l'image avec la distinction Tumeur(s) (masque en bleu)/Sans Tumeurs pixel par pixel</figcaption>
+                      </figure>
+                  </div>
+
+             
+                  <div class="gallery">
+                      <figure>
+                          <img src="image/.png" alt="Développement en cours">
+                          <figcaption> Performances globales du modèle U-Net sur les données de validation</figcaption>
+                      </figure>
+                  </div>
+             
+                  <p>>>> Afin d'assurer la sécurité de la clé, cette dernière est hachée via l'algorithme 'Scrypt' qui se révèle plus puissant que la méthode SHA-256 classique
+                         qui est notamment utilisée pour la blockchain et le bitcoin. Cette clé Alphabético-numérique de 25 caractères s'avère donc très robuste, et permet d'authentifier
+                         le client rapidement. Pour les autres aspects cybersécurité, l'application restreint le bruteforce (5 essais maximums), le protocole RLS de la base de donnée 
+                         interdit toutes les opérations qui sont différentes du 'SELECT' des données de la session (l'utilisateur ne peut lire que ses propres données si il est connecté
+                         à la base de données) et enfin les connexions Application <-> Base de données sont sécurisées grâce à la couche SSL/TLS.
+                  </p>
+         </div>
+        
          <div id="date10">
                  <h3>16 Mai 2025 : Segmentation de l'image médicale avec le modèle U-Net du Projet de recherche (cf Mines de Saint-Etienne)</h3>
 
